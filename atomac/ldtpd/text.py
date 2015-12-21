@@ -144,8 +144,8 @@ class Text(Utils):
         @rtype: string
         """
         object_handle=self._get_object_handle(window_name, object_name)
-        if not object_handle.AXEnabled:
-            raise LdtpServerException(u"Object %s state disabled" % object_name)
+     #   if not object_handle.AXEnabled:
+     #      raise LdtpServerException(u"Object %s state disabled" % object_name)
         return object_handle.AXValue
 
     def inserttext(self, window_name, object_name, position, data):
